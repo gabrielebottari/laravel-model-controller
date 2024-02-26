@@ -1,5 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 
+/*
 main {
     background-color: lightcoral;
 }
@@ -12,4 +13,20 @@ main {
     height: 200px;
     background-image: url('../img/gatto.webp');
     background-size: contain;
+}
+*/
+
+.movie-blue {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
+    }
+}
+  
+
+.movie-yellow:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+    transition: box-shadow 0.3s ease-in-out;
 }

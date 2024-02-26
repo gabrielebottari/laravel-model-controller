@@ -3,21 +3,18 @@
 @section('page-title', 'Tutti i Film')
 
 @section('main-content')
-<h1>
-    Movies
-</h1>
 
 <div class="row">
     @foreach ($movies as $index => $movie)
-        <div class="col-12 col-sm-3">
-            <div class="card">
-                <div class="card-body">
-                    <h3>
+        <div class="col-12 col-sm-6 px-5 py-4">
+            <div class="card bg-primary movie-blue">
+                <div class="card-body text-center">
+                    <h2 class="text-warning">
                         {{ $movie->title }}
-                    </h3>
+                    </h2>
 
-                    <a href="{{ route('movies.show', ['movie' => $movie->id]) }}" class="btn btn-primary">
-                        vai al film
+                    <a href="{{ route('movies.show', ['movie' => $movie->id]) }}" class="btn btn-warning text-center movie-yellow">
+                        <span class="text-primary fw-bold">Go To Movie <i class="fa-solid fa-film"></i></span>
                     </a>
                 </div>
             </div>
