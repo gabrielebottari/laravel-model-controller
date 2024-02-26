@@ -9,23 +9,23 @@
         <div class="card bg-primary movie-blue">
             <div class="card-body text-center">
                 <h1 class="text-warning fs-1 fw-bold">
-                    {{ $movie->title }}
+                    Titolo: {{ $movie->title }}
                 </h1>
 
                 <p class="text-warning fs-1">
-                    {{ $movie->original_title }}
+                    Titolo Originale: {{ $movie->original_title }}
                 </p>
 
                 <p class="text-warning fs-1">
-                    {{ $movie->nationality }}
+                   Nazionalità: {{ $movie->nationality }}
                 </p>
 
                 <p class="text-warning fs-1">
-                    {{ $movie->date }}
+                    Data: {{ $movie->date }}
                 </p>
 
                 <p class="text-warning fs-1">
-                    {{ $movie->vote }}
+                    Voto: {{ $movie->vote }}
                 </p>
             </div>
         </div>
